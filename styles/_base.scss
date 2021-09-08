@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fae6ff;
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  opacity: 0;
+  transition: 0.3s;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.show {
+  opacity: 1;
+  transition: 0.3s;
+  visibility: visible;
+  pointer-events: all;
+}
