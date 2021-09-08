@@ -20,14 +20,14 @@ li {
 
 .hide {
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.8s;
   visibility: hidden;
   pointer-events: none;
 }
 
 .show {
   opacity: 1;
-  transition: 0.3s;
+  transition: 0.8s;
   visibility: visible;
   pointer-events: all;
 }

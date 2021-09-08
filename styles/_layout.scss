@@ -15,7 +15,36 @@ main {
     }
   }
 
-  .test {
-    height: 2000px;
+  .content-section {
+    padding: 0 10vw;
+    font-family: neue-haas-grotesk-text, sans-serif;
+    text-align: center;
+    color: blue;
+    height: 800px;
+
+    h1 {
+      font-weight: 400;
+      font-size: 25vw;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 5vw;
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1.5vw;
+      max-width: 60vw;
+      margin: 20px auto;
+    }
+
+    .categories {
+      font-size: 1.8vw;
+      font-weight: 400;
+    }
   }
 }

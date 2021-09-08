@@ -20,14 +20,14 @@ li {
 
 .hide {
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.8s;
   visibility: hidden;
   pointer-events: none;
 }
 
 .show {
   opacity: 1;
-  transition: 0.3s;
+  transition: 0.8s;
   visibility: visible;
   pointer-events: all;
 }
@@ -43,8 +43,60 @@ main #splash div {
   width: 50vw;
   margin: auto;
 }
-main .test {
-  height: 2000px;
+main .content-section {
+  padding: 0 10vw;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  text-align: center;
+  color: blue;
+  height: 800px;
+}
+main .content-section h1 {
+  font-weight: 400;
+  font-size: 25vw;
+  text-transform: uppercase;
+}
+main .content-section h2 {
+  font-weight: 400;
+  font-size: 5vw;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+main .content-section p {
+  font-weight: 400;
+  font-size: 1.5vw;
+  max-width: 60vw;
+  margin: 20px auto;
+}
+main .content-section .categories {
+  font-size: 1.8vw;
+  font-weight: 400;
+}
+
+.cta {
+  height: fit-content;
+  width: fit-content;
+  padding: 20px 50px;
+  border-radius: 70%;
+  text-align: center;
+  border: 3px solid blue;
+  text-transform: uppercase;
+  color: blue;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  position: fixed;
+  transform: rotate(20deg);
+  bottom: 40px;
+  left: 30px;
+  transition: 0.3s;
+}
+.cta:hover {
+  transform: scale(1.7);
+  bottom: 80px;
+  left: 100px;
+}
+.cta a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */
