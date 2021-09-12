@@ -2,8 +2,9 @@ header {
   .logo {
     position: fixed;
     right: 10px;
-    top: -35px;
+    top: 30px;
     width: 220px;
+    z-index: 1;
   }
 }
 
@@ -15,16 +16,27 @@ main {
     }
   }
 
+  h3 {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 400;
+    font-size: 13vw;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1402ff;
+    margin-bottom: 100px;
+  }
+
   .content-section {
-    padding: 0 10vw;
+    padding: 0 15vw;
     font-family: neue-haas-grotesk-text, sans-serif;
     text-align: center;
-    color: blue;
-    height: 800px;
+    color: #1402ff;
+    margin-bottom: 400px;
+    min-height: 100vh;
 
     h1 {
       font-weight: 400;
-      font-size: 25vw;
+      font-size: 20vw;
       text-transform: uppercase;
     }
 
@@ -32,19 +44,35 @@ main {
       font-weight: 400;
       font-size: 5vw;
       margin-bottom: 0;
-      text-transform: uppercase;
     }
 
     p {
       font-weight: 400;
-      font-size: 1.5vw;
+      font-size: 1vw;
       max-width: 60vw;
-      margin: 20px auto;
+      margin: 50px auto;
     }
 
     .categories {
       font-size: 1.8vw;
       font-weight: 400;
+      margin-bottom: 80px;
+      margin-top: 40px;
+    }
+
+    img {
+      width: 30%;
+    }
+
+    .video-section {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .contact-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
     }
   }
 }

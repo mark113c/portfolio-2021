@@ -35,41 +35,65 @@ li {
 header .logo {
   position: fixed;
   right: 10px;
-  top: -35px;
+  top: 30px;
   width: 220px;
+  z-index: 1;
 }
 
 main #splash div {
   width: 50vw;
   margin: auto;
 }
+main h3 {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 400;
+  font-size: 13vw;
+  text-transform: uppercase;
+  text-align: center;
+  color: #1402ff;
+  margin-bottom: 100px;
+}
 main .content-section {
-  padding: 0 10vw;
+  padding: 0 15vw;
   font-family: neue-haas-grotesk-text, sans-serif;
   text-align: center;
-  color: blue;
-  height: 800px;
+  color: #1402ff;
+  margin-bottom: 400px;
+  min-height: 100vh;
 }
 main .content-section h1 {
   font-weight: 400;
-  font-size: 25vw;
+  font-size: 20vw;
   text-transform: uppercase;
 }
 main .content-section h2 {
   font-weight: 400;
   font-size: 5vw;
   margin-bottom: 0;
-  text-transform: uppercase;
 }
 main .content-section p {
   font-weight: 400;
-  font-size: 1.5vw;
+  font-size: 1vw;
   max-width: 60vw;
-  margin: 20px auto;
+  margin: 50px auto;
 }
 main .content-section .categories {
   font-size: 1.8vw;
   font-weight: 400;
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+main .content-section img {
+  width: 30%;
+}
+main .content-section .video-section {
+  display: flex;
+  flex-direction: row;
+}
+main .content-section .contact-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .cta {
@@ -78,9 +102,9 @@ main .content-section .categories {
   padding: 20px 50px;
   border-radius: 70%;
   text-align: center;
-  border: 3px solid blue;
+  border: 3px solid #1402ff;
   text-transform: uppercase;
-  color: blue;
+  color: #1402ff;
   font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -98,5 +122,100 @@ main .content-section .categories {
 .cta a {
   text-decoration: none;
 }
+
+main .cta-contact {
+  height: fit-content;
+  width: fit-content;
+  padding: 20px 50px;
+  border-radius: 70%;
+  text-align: center;
+  border: 3px solid blue;
+  text-transform: uppercase;
+  color: blue;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  transform: rotate(20deg);
+  bottom: 0px;
+  left: 0px;
+  transition: 0.3s;
+  margin-left: 50px;
+}
+main .cta-contact:hover {
+  transform: scale(1.2);
+  bottom: 80px;
+  left: 100px;
+}
+main .cta-contact a {
+  text-decoration: none;
+}
+main .cta-contact p {
+  margin: 10px;
+  font-weight: 700;
+  font-size: 0.8vw;
+}
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+  --offset: 30vw;
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset));
+  border-style: solid;
+}
+
+.heading-2 {
+  font-weight: 400;
+  font-size: 10vw;
+  text-transform: uppercase;
+  color: #1402ff;
+  font-family: neue-haas-grotesk-text, sans-serif;
+}
+
+.heading-3 {
+  font-weight: 400;
+  font-size: 4vw;
+  text-transform: uppercase;
+  color: #1402ff;
+  font-family: neue-haas-grotesk-text, sans-serif;
+}
+
+.marquee__inner {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: marquee 10s linear infinite;
+  animation-play-state: paused;
+}
+
+.marquee span {
+  padding: 0 4vw;
+}
+
+.marquee:hover .marquee__inner {
+  animation-play-state: running;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
+  100% {
+    transform: translate3d(var(--move-final), 0, 0);
+  }
+}
+.logo:hover img {
+  opacity: 0;
+  animation-duration: 2s;
+}
+
+.logo:hover img {
+  opacity: 0;
+  transition: 1s;
+  animation-name: spinningText;
+}
+
+@keyframes spinningText {}
 
 /*# sourceMappingURL=/main.39afc03c.css.map */
