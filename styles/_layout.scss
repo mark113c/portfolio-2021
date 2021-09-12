@@ -3,16 +3,27 @@ header {
     position: fixed;
     right: 10px;
     top: 30px;
-    width: 220px;
+    width: 150px;
     z-index: 1;
+
+    @media (min-width: 700px) {
+      width: 220px;
+    }
   }
 }
 
 main {
   #splash {
     div {
-      width: 50vw;
+      width: 80vw;
       margin: auto;
+      height: 100vh;
+      display: flex;
+      align-content: center;
+    
+      @media (min-width: 700px) {
+        width: 50vw;
+      }
     }
   }
 
@@ -36,8 +47,12 @@ main {
 
     h1 {
       font-weight: 400;
-      font-size: 20vw;
+      font-size: 5rem;
       text-transform: uppercase;
+
+      @media (min-width: 700px) {
+        font-size: 20vw;
+      }
     }
 
     h2 {
