@@ -12,6 +12,8 @@
   font-style: normal;
 
   position: fixed;
+  display: none;
+
   transform: rotate(20deg);
   bottom: 40px;
   left: 30px;
@@ -23,47 +25,51 @@
     left: 100px;
   }
 
-  a {
-    text-decoration: none;
-  }
-}
-
-main .cta-contact {
-  height: fit-content;
-  width: fit-content;
-  padding: 20px 50px;
-  border-radius: 70%;
-  text-align: center;
-  border: 3px solid blue;
-  text-transform: uppercase;
-  color: blue;
-  font-family: neue-haas-grotesk-text, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-
-  transform: rotate(20deg);
-  bottom: 0px;
-  left: 0px;
-  transition: 0.3s;
-
-  &:hover {
-    transform: scale(1.2);
-    bottom: 80px;
-    left: 100px;
+  @media (min-width: 700px) {
+    display: block;
   }
 
   a {
     text-decoration: none;
   }
-
-  p {
-    margin: 10px;
-    font-weight: 700;
-    font-size: 0.8vw;
-  }
-
-  margin-left: 50px;
 }
+
+// main .cta-contact {
+//   height: fit-content;
+//   width: fit-content;
+//   padding: 20px 50px;
+//   border-radius: 70%;
+//   text-align: center;
+//   border: 3px solid blue;
+//   text-transform: uppercase;
+//   color: blue;
+//   font-family: neue-haas-grotesk-text, sans-serif;
+//   font-weight: 700;
+//   font-style: normal;
+  
+//   transform: rotate(20deg);
+//   bottom: 0px;
+//   left: 0px;
+//   transition: 0.3s;
+
+//   &:hover {
+//     transform: scale(1.2);
+//     bottom: 80px;
+//     left: 100px;
+//   }
+
+//   a {
+//     text-decoration: none;
+//   }
+
+//   p {
+//     margin: 10px;
+//     font-weight: 700;
+//     font-size: 0.8vw;
+//   }
+
+//   margin-left: 50px;
+// }
 
 .marquee {
   position: relative;
@@ -128,13 +134,13 @@ main .cta-contact {
   animation-name: spinningText;
 }
 
-@keyframes spinningText {
-  0% {
-  }
+// @keyframes spinningText {
+//   0% {
+//   }
 
-  100% {
-  }
-}
+//   100% {
+//   }
+// }
 
 // font-family: neue-haas-grotesk-text,sans-serif;
 // font-weight: 400;
