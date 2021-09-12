@@ -77,7 +77,11 @@
   --offset: 30vw;
   --move-initial: calc(-25% + var(--offset));
   --move-final: calc(-50% + var(--offset));
-  border-style: solid;
+  border: solid;
+  border-left: none;
+  border-right: none;
+  padding: 10px 0;
+  margin: 10px 0;
 }
 
 .heading-2 {
@@ -110,7 +114,18 @@
 }
 
 .marquee:hover .marquee__inner {
+
+  @media (min-width: 700px) {
+    animation-play-state: running;
+  }
+}
+
+.marquee .marquee__inner {
   animation-play-state: running;
+
+  @media (min-width: 700px) {
+    animation-play-state: paused;
+  }
 }
 
 @keyframes marquee {
